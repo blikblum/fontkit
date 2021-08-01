@@ -1,6 +1,12 @@
-# fontkit
+# fontkit-next
 
-Fontkit is an advanced font engine for Node and the browser, used by [PDFKit](https://github.com/devongovett/pdfkit). It supports many font formats, advanced glyph substitution and layout features, glyph path extraction, color emoji glyphs, font subsetting, and more.
+> Fontkit fork with following fixes / improvements
+>  * Add browser specific build [#208](https://github.com/foliojs/fontkit/pull/208)
+>  * Fix for deprecated usage new Buffer [#227](https://github.com/foliojs/fontkit/pull/227)
+>  * Use updated restructure dependency to avoid CSP issues
+>  * Fix subsetting CFF fonts (e.g., Noto) [#230](https://github.com/foliojs/fontkit/pull/230)
+
+Fontkit is an advanced font engine for Node and the browser, used by [PDFKit](https://github.com/foliojs/pdfkit). It supports many font formats, advanced glyph substitution and layout features, glyph path extraction, color emoji glyphs, font subsetting, and more.
 
 ## Features
 
@@ -17,12 +23,12 @@ Fontkit is an advanced font engine for Node and the browser, used by [PDFKit](ht
 
 ## Installation
 
-    npm install fontkit
+    npm install fontkit-next
 
 ## Example
 
 ```javascript
-var fontkit = require('fontkit');
+var fontkit = require('fontkit-next');
 
 // open a font synchronously
 var font = fontkit.openSync('font.ttf');
